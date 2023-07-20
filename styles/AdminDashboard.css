@@ -1,0 +1,24 @@
+.nav-link.active {
+    color: #132653;
+    background-color: #fac215;
+    /* Add any other styles you want for the active state */
+  }
+  
+  .nav-link:hover {
+    background-color: #9a8c98;
+    /* Add any other styles you want for the hover state */
+  }
+
+  .nav-link{
+    background-color: #4a4e69;
+    color: #fff;
+  }
+
+  textarea,select, option, input,span{
+    color: black;
+}
+
+.table-container{
+    max-height:65vh;
+    overflow: auto;
+}

@@ -1,0 +1,87 @@
+.welcome-container {
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    min-width: 375px;
+}
+
+.left,
+.right {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.logo-welcome-container img {
+    width: 275px;
+    margin: auto;
+}
+
+.frog-container img {
+    width: 220px;
+    margin: auto;
+}
+
+.frog-container {
+    margin-top: -25px;
+}
+
+.welcome-title {
+    padding-bottom: 20px;
+}
+
+
+.welcome-button-container {
+    position: relative;
+}
+
+.hand {
+    position: absolute;
+    right: 0;
+    top: 70%;
+    width: 50px;
+    animation: handAnimation 3s infinite;
+}
+
+@media screen and (min-width: 500px) {
+    .welcome-container {
+        gap: 50px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .left,
+    .right {
+        width: 45%;
+    }
+}
+
+@keyframes handAnimation {
+    0% {
+        width: 30px;
+    }
+
+    25% {
+        width: 50px;
+    }
+
+    50% {
+        width: 30px;
+    }
+
+    75% {
+        width: 50px;
+    }
+
+    100% {
+        width: 30px;
+    }
+}

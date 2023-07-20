@@ -1,0 +1,110 @@
+.signin-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    min-width: 375px;
+}
+
+.logo-signin-container img {
+    width: 275px;
+    margin: auto;
+    margin-bottom: 50px;
+}
+
+.signin-container h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.signin-form-container {
+    width: 80%;
+    margin: 10px auto;
+}
+
+.signin-form-container form input {
+    width: 100%;
+    margin: auto;
+    padding: 10px 0;
+    padding-left: 5%;
+    color: #132653;
+    background-color: #ffffff;
+    border: 0px;
+    border-radius: 6px;
+    font-size: 18px;
+    margin-top: 10px
+}
+
+.signin-form-container form input::placeholder {
+    font-weight: normal;
+    color: #132653;
+    font-size: 16px;
+}
+
+.btn-signin {
+    width: 100%;
+    margin-top: 10px;
+}
+
+.signin-container p {
+    width: 100%;
+    margin-top: 10px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.password-container {
+    position: relative;
+}
+
+.password-container img {
+    right: 10px;
+    top: 57%;
+    transform: translateY(-50%);
+    position: absolute;
+}
+
+.alertErr {
+    background-color: #ee9099;
+    color: #881420;
+    padding: 10px;
+    margin-top: 25px;
+    border-radius: 6px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+    font-weight: 500;
+}
+
+.alertErr.show {
+    opacity: 1;
+}
+
+@media screen and (min-width: 550px) {
+    .signin-container {
+        padding-top: 100px;
+        margin-left: 30%;
+    }
+
+    .signin-form-container {
+        width: 50%;
+    }
+
+    .logo-signin-container img {
+        margin-bottom: 100px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .signin-container {
+        margin-left: 10%;
+    }
+
+    .signin-form-container {
+        width: 30%;
+    }
+
+    .logo-signin-container img {
+        width: 320px;
+    }
+}

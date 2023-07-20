@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://use.typekit.net/pmq4qvw.css");
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+* {
+  font-family: poppins, sans-serif;
+  color: #ffffff;
+}
+
+p {
+  font-family: poppins, sans-serif;
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  background-image: radial-gradient(#163275, #132653);
+  background-color: #132653;
+  width: 100%;
+  height: 100%;
+  color: #ffffff;
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  text-transform: uppercase;
+  font-family: ruddy, sans-serif;
+  font-weight: 540;
+}
+
+h2 {
+  font-family: ruddy, sans-serif;
+  font-size: 28px;
+  text-transform: capitalize;
+
+}
+
+h3 {
+  font-size: 19px;
+  font-weight: normal;
+  font-family: ruddy, sans-serif;
+}
+
+button,
+.button {
+  padding: 10px 30px;
+  color: #132653;
+  background-color: #fac215;
+  border: 0px;
+  border-radius: 6px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.logo-top {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.logo-top img {
+  width: 160px;
+}
+
+@media screen and (min-width: 550px) {
+  .logo-top {
+    display: none;
+  }
+}
